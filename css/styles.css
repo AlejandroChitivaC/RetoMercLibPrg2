@@ -3,10 +3,7 @@ body {
   margin: 0;
   background-color: gray;
 }
-div {
-  display: block;
-  margin: 0 auto;
-}
+
 .search {
   width: 200px;
   height: 50%;
@@ -34,19 +31,23 @@ div {
 
   margin-top: -80px;
 }
-.navbar {
+
+.bar {
   margin-top: -22.8px;
+  background-color: #fff159;
+  display: flex;
+  z-index: 0;
+  justify-content: center;
 }
 
-ul {
-  display: block;
-  width: 100%;
+.navbar {
+ z-index: 1;
+  width: 60%;
   align-items: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0,100px,0,100px;
   overflow: hidden;
-  background-color: #fff159;
+
 }
 
 li {

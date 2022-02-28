@@ -16,40 +16,45 @@
 
 <body>
     <header>
+
         <div class="header-container">
             <div class="search-bar">
-                <img src="/Resources/mercadolibre.png" alt="logo">
-                <form class="search" action="search">
-                    <input type="text" name="search" placeholder="Buscar...">
-                    <button src="" type="submit">
+                <img class="logo" src="/Resources/mercadolibre.png" alt="logo">
+                <form class="mainSearch" action="search">
+                    <input class="search" type="text" name="search" placeholder="Buscar productos, marcas y más...">
                     </button>
                 </form>
+                <img class="desc" src="https://http2.mlstatic.com/D_NQ_950396-MLA49184407899_022022-OO.webp" alt="prom">
+            </div>
+
+            <div class="navbar">
+
+                <div class="location">
+                    <img src="./Resources/Location.png" alt="">
+                    <p>Ingresa tu ubicación</p>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="">Categorias</a></li>
+                        <li><a href="">Ofertas</a></li>
+                        <li><a href="">Historial</a></li>
+                        <li><a href="">Supermercado</a></li>
+                        <li><a href="">Moda</a></li>
+                        <li><a href="">Vender</a></li>
+                        <li><a href="">Ayuda / PQR </a></li>
+                    </ul>
+                </div>
+
+                <div class="account">
+                    <ul>
+                        <li><a href="">Crea tu cuenta</a></li>
+                        <li><a href="">Ingresa</a></li>
+                        <li><a href="">Mis compras</a></li>
+                    </ul>
+                </div>
 
             </div>
-            <div class="bar">
-                <ul class="navbar">
-                    <li><a href="index.html">Inicio</a></li>
-
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="true">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-
-                    <li><a href="/web/ofertas.html">Ofertas</a></li>
-                    <li><a href="/web/history.html">Historial</a></li>
-                    <li><a href="/web/supermercado.html">Supermercado</a></li>
-                    <li><a href="/web/moda.html">Moda</a></li>
-                    <li><a href="/web/vender.html">Vender</a></li>
-                </ul>
-            </div>
-        </div>
     </header>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -59,7 +64,7 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
                 aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
@@ -97,12 +102,101 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <main>
+    <div class="pagos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="/Resources/credit-card.svg" alt="Credit Card">
+                    Hasta 48 Cuotas
+                    <button id="btnshowmore" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Ver más
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Medios de Pago </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        <img src="/Resources/mercado-pago.svg" alt="">
+                                        <strong>Paga con Mercado Pago</strong><br>
+                                        Pagar con Mercado Pago es elegir cualquiera de estos medios. Es rápido, seguro y
+                                        no tiene costo adicional.
+                                        <br>
+                                        <img src="/Resources/credit-card.svg" alt="">
+                                        <strong>Tarjetas de crédito</strong>
+                                        <br>
+                                        En hasta 48 cuotas en todo el sitio
+                                        <br>
+                                        <img src="/Resources/transfer.svg" alt="">
+                                        <strong>Transferencia desde tu banco</strong>
+                                        <br>
+                                        Termina tu compra y haz un traspaso online sin moverte de tu casa.
+                                        <br>
+                                        <img src="/Resources/payment-agreement.svg" alt="">
+                                        <strong>Efectivo en puntos de pago</strong>
+                                        <br>
+                                        Es muy simple: cuando termines tu compra, te daremos las instrucciones para que
+                                        sepas cómo y dónde pagarla.
+                                        <br>
+                                        <img src="/Resources/account-money.svg" alt="">
+                                        <strong>Dinero disponible en tu cuenta de Mercado Pago</strong>
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </main>
+                <div class="col">
+                    <img src="/Resources/transfer.svg" alt="Transferencia">
+                    Transferencia desde tu banco
+                    <button id="btnshowmore" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Ver más
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="/Resources/payment-agreement.svg" alt="Efectivo">
+                    Paga en Efectivo
+                    <button id="btnshowmore" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Ver más
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="/Resources/view-more.svg" alt="More payments">
+                    Más medios de pago
+                    <br>
+                    <button id="btnshowmore" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Ver más
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <p class="card-title">Basado en tu última visita. <a href="">Ver Historial</a></p>
+
+    </div>
+
+
+
     <footer>
 
     </footer>
+
 </body>
 
 </html>

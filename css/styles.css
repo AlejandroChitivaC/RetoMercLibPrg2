@@ -2,7 +2,7 @@ body {
   font-size: 20px;
   margin: 0;
   background-color: gray;
-  
+
 }
 .search-bar {
   width: 100%;
@@ -141,3 +141,46 @@ body {
 .card{
   margin-top: 40px;
 }
+
+.title{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  margin-top: 20px;
+  color: #ffff;
+  background: rgb(169,15,144);
+  background: linear-gradient(90deg, rgba(169,15,144,1) 35%, rgba(25,25,86,1) 100%);
+}
+.container{
+  margin-top: 40px;
+}
+.container img{
+  height: 72px;
+  width:72px;
+}
+.links-footer {
+  width: 650px;
+  padding-left: 30px;
+}
+
+.links-footer li {
+  list-style: none;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.links-footer li a {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  float: left;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.links-footer li a:hover {
+  opacity: 0.9;
+}
+
+
